@@ -9,16 +9,16 @@ public class ControllerStudent {
     Scanner sc = new Scanner(System.in);
 
     public void add(ArrayList<Student> arr) {
-        System.out.println("---------------------------");
+
         String addNext;
         do {
-            System.out.print("enter StudentID: ");
+            System.out.print("Enter StudentID: ");
             String newID = sc.nextLine();
-            System.out.print("enter Student Name: ");
+            System.out.print("Enter Student Name: ");
             String newName = sc.nextLine();
-            System.out.print("Enter Address of Student: ");
+            System.out.print("Enter Address: ");
             String newAddress = sc.nextLine();
-            System.out.print("enter Phone number of student: ");
+            System.out.print("Enter Phone number: ");
             String newPhone = sc.nextLine();
             
             arr.add(new Student(newID, newName, newAddress, newPhone));
@@ -34,7 +34,7 @@ public class ControllerStudent {
         System.out.println("---------------------------");
         System.out.println("All the student records in the collection is: ");
         String id = "StudentID";
-        String name = "StudentName";
+        String name = "Name";
         String address = "Address";
         String phone = "Phone";
         System.out.printf("%-30s%-30s%-30s%-30s\n", id, name, address, phone);
