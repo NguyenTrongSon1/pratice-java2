@@ -9,7 +9,6 @@ CREATE table Student(
     Phone varchar(10) check (Phone not like '%[^0-9]%')
 );
 
-Drop table Student;
 
 INSERT INTO Student values
 ('B01010','Nguyen Tuan Anh','Ha Noi',0904818238),
