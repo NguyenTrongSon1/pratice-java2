@@ -14,10 +14,10 @@ public class StudentView {
         ControllerStudent studentController = new ControllerStudent();
         int choice;
         do {
-            System.out.println("1. Add new student records");
+            System.out.println("1. Add student records");
             System.out.println("2. Display student records");
-            System.out.println("3. Save new records.");
-            System.out.println("4. Exit the program");
+            System.out.println("3. Save");
+            System.out.println("4. Exit");
             System.out.print("your choice: ");
             choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
